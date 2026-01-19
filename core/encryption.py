@@ -19,7 +19,7 @@ def encrypt_command(keyb64, ivb64, plain):
     decoded_key = base64.b64decode(keyb64)
     decoded_iv = base64.b64decode(ivb64)
     aesobj = AES.new(decoded_key, AES.MODE_CBC, decoded_iv)
-    data = pad(plain)
+    data = pad(plain.encode())
     try:
         encd = aesobj.encrypt(data)
         return base64.b64encode(encd)
