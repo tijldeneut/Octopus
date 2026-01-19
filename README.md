@@ -35,11 +35,13 @@
 This build was tested on
 * Ubuntu 20.04
 * Ubuntu 24.04
+* Kali Rolling (2025)
+* Debian 11/12/13
 
 For recent Debian based versions of Linux (Debian/Ubuntu/Kali):
 ```
-sudo apt install -y sudo screen vim git python3-pip python3-flask python3-requests python3-termcolor python3-tabulate nasm mingw-w64 mono-devel
-python3 -m pip install pycryptodome --break-system-packages
+apt install -y git python3-pip python3-flask python3-requests python3-termcolor python3-tabulate nasm mingw-w64 mono-devel
+python3 -m pip install pycryptodome
 git clone https://github.com/tijldeneut/Octopus/ && cd Octopus
 ./octopus.py
 ```
