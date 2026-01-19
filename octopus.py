@@ -40,7 +40,8 @@ while True:
     readline.parse_and_bind("tab: complete")
     readline.write_history_file(".oct_history")
     try:
-        command = input("\033[4mOctopus\033[0m"+colored(" >>", "green"))
+        #command = input("\033[4mOctopus\033[0m"+colored(" >>", "green"))
+        command = input('Octopus>> ')
         # readline.write_history_file(".console_history.oct")
         if command == "list":
             list_sessions()
