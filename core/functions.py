@@ -574,7 +574,7 @@ def banner():
      \__\/         \__\/                     \__\/         \__\/       \__\/         \__\/
 {1}
 
-                    {3}v1.2 stable !{1}
+                    {3}v1.2.1 stable !{1}
 
 
 {2} Octopus C2 | Control your shells {1}
