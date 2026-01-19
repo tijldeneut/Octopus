@@ -1,3 +1,6 @@
+# Credits
+**Forked from https://github.com/mhaskar/Octopus/**
+
 # What is Octopus ? ![](https://img.shields.io/badge/python-3-yellow)
 
   Octopus is an open source, pre-operation C2 server based on python which can control an Octopus powershell agent through HTTP/S.
@@ -29,6 +32,24 @@
   * **Gather information automatically from the endpoint (endpoint situational awareness) feature.**
 
 # Requirements
+This build was tested on
+* Ubuntu 20.04
+* Ubuntu 24.04
+
+For recent Debian based versions of Linux (Debian/Ubuntu/Kali):
+```
+sudo apt install -y sudo screen vim git python3-pip python3-flask python3-requests python3-termcolor python3-tabulate nasm mingw-w64 mono-devel
+python3 -m pip install pycryptodome --break-system-packages
+git clone https://github.com/tijldeneut/Octopus/ && cd Octopus
+./octopus.py
+```
+_Note: the pip install command is required because apt install python3-pycryptodome does not support 'from Crypto import Random' for some reason_
+
+Original release (https://github.com/mhaskar/Octopus) has been tested on the following operating systems:
+
+* Ubuntu (18.04)
+* Ubuntu (16.04)
+* Kali Linux (2019.2)
 
 You can install all of Octopus' requirements via :
 
@@ -44,11 +65,6 @@ And you can install `mingw-w64` on Debian based distros using:
 
 `apt install mingw-w64`
 
-Octopus has been tested on the following operating systems:
-
-* Ubuntu (18.04)
-* Ubuntu (16.04)
-* Kali Linux (2019.2)
 
 You will also need to install mono to make sure that you can compile the C# source without issues.
 
